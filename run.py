@@ -6,6 +6,7 @@
 # imports
 import random
 
+
 # Constants
 def display_hangman(tries):
     stages = [  # final state: head, torso, both arms, and both legs
@@ -80,3 +81,13 @@ def display_hangman(tries):
                 """
     ]
     return stages[tries]
+
+WORDS = ["DOG", "CAT", "SWEDEN", "SUMMER", "SUN", "LONDON"]
+
+
+MAX_WRONG = len(HANGMAN) - 1
+
+# initialize Variables
+
+# Pick a word
+word = random.choice(WORDS)
